@@ -22,27 +22,6 @@ Give it as a single prompt to give to an agent to achieve this
 
 more prompts
 -----------
-In the master list add a '+' button at bottom right to add a master list.  This will be a name, followd by adding items to the master list.
-in the master list, only show a list of master TODO.  no need to show child items
-main screen should show master TODO list only,  Clicking on it, should open a new page with all child entries.
-all master lists should be saved in file system at /sdcard/Vypeensoft/TODO_Task_LIst/master_lists/
-each master list on main screen to be saved under their own json file under /sdcard/Vypeensoft/TODO_Task_LIst/master_lists/
-
-This path /sdcard/Vypeensoft/TODO_Task_LIst/master_lists/ should be configurable via the settings page.  All settings to be saved under all master lists should be saved in file system at /sdcard/Vypeensoft/TODO_Task_LIst/settings/settings.json
-On startup, app should if folder /sdcard/Vypeensoft/TODO_Task_LIst/master_lists/ doesnt exist, then create it.  Infact, the folder to be checked and created is from the settings
-On startup, app should read the master jsons from /sdcard/Vypeensoft/TODO_Task_LIst/master_lists/*.json and display on the main screen...
-Provide sane color theme, with good contrasts ie.. industry standard/acceptable
-on the main list, provide a delete icon (garbage bin) to delete one master TODO.  It should soft delete the JSON.  ie... rename  it to a FILENAME+timestamp format and move it to an "deleted" folder under the master_list
-on the sub list, have a checkbox at the end of the line to mark it as complete.  Once marked as complete, strike the item text.  store the competed status in the json as well
-on app start,master list on screen is empty. When user goes to settings and save the folder path, then it is able to pickup the master TODO and populate the screen
-
-Modify AboutActivity.java and related source code in this project according to code taken from X:\Projects_X\0_Active\8_Android_APK\Randomizer_APK_GITHUB\app\src\main\java\com\vypeensoft\randomizer\AboutActivity.java
-Along with completion checkbox, also provide a delete icon (dustbin) for each item. This should delete the record from the underlying json file
-on clicking  + add button, when popup appears, set focus to text field and show the keyboard. This should be behaviour for both popups.
-
-The icon supplied by me is round.  but the icon in the app is square with rounded edge. Please keep it round only, with white background outside the circle
-Show master list in alphbetical order
-burger menu is not visible. make it contrasting color
 
 
 
@@ -262,6 +241,5 @@ Use stable modern libraries only:
 - Backup ZIP export/import
 
 
-Use existing project source code for features if possible, like "Help" page, "About" page, etc....menu structure and theme, etc...
-
+Use existing project source code for features if possible, like "Help" page, "About" page, etc....menu structure and theme, etc,,
 Generate the entire project structure and source code in full detail.
