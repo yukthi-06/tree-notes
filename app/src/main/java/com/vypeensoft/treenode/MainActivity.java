@@ -3,6 +3,7 @@ package com.vypeensoft.treenode;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -123,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         final EditText input = new EditText(this);
         input.setHint("Tree Name");
         input.setSingleLine(true);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
         
         // Add padding to EditText
         FrameLayout container = new FrameLayout(this);
@@ -170,6 +172,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         input.setText(document.getName());
         input.setSelection(input.getText().length());
         input.setSingleLine(true);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
 
         FrameLayout container = new FrameLayout(this);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
